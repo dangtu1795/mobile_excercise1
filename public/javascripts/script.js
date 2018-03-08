@@ -1,6 +1,7 @@
 var service = new google.maps.DistanceMatrixService();
 var geocoder = new google.maps.Geocoder;
 function findAddress() {
+    $('.result').empty();
     var lat = $('#lat').val();
     var long = $('#long').val();
     var latlng = {lat: parseFloat(lat), lng: parseFloat(long)};
